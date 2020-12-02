@@ -6,17 +6,15 @@ import styled from 'styled-components';
 const Post = () => {
     const Wrap = styled.div`
         width: 100%;
-        height: 400px;
         overflow: hidden;
         display: flex;
         
-
-        & div {
-            width: 155px;
-            height: 195px;
+        & > div {
+            width: 50%;
             margin: 1px;
             border: 1px solid black;
             box-sizing: border-box;
+            border: 1px solid black;
         }
     `
 

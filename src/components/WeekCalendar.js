@@ -17,7 +17,8 @@ const WeekCalendar = () => {
     `
 
     const SubWrap = styled.div`
-        width: 55px;
+        width: 14%;
+        padding : 0
         height: 50px;
         & span {
             line-height: 23px;
@@ -59,11 +60,7 @@ const WeekCalendar = () => {
         let day, date;
         for(let i=0; i<7; i++) {
             day = days[(i+nowDay)%7];
-            date = (nowDate+i)%(dates[nowMonth]+1);
-
-            if(date >= 0 && date <= 6)
-                date += 1;
-
+            date = (nowDate+i)%(dates[nowMonth]+1)+1;
             week[day] = date;
         }
     }
